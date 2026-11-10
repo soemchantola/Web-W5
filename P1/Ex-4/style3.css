@@ -1,0 +1,31 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media((min-width: 350px) and (max-width: 516px)){
+    .big{
+        display: none;
+    }
+    .small{
+        background-color: red;
+        display: block;
+    }
+}
+
+@media((min-width: 516px) and (max-width: 792px)){
+    .small{
+        display: none;
+    }
+    .big{
+        background-color: greenyellow;
+        display: block;
+   }
+}
+
+@media(min-width: 792px){
+    .wrapper{
+        display: none;
+    }
+}

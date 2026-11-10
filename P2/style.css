@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+h2, footer{
+  height: 3rem;
+  background-color: rgb(240, 238, 238);
+}
+
+h2{
+  color: rgb(91, 90, 90);
+  text-align: center;
+  align-content: center;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 1.5px solid darkgray;
+}
+
+footer{
+  padding-right: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  border-radius: 0 0 1rem 1rem;
+  border-top: 1.5px solid darkgray;
+  cursor: pointer;
+}
+
+#info{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-field{
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: green;
+  font-size: small;
+}
+
+.gender-container label, .hobby-container label{
+  color: black;
+  font-size: small;
+}
+
+form input{
+  width: 100%;
+  height: 1.75rem;
+  padding: 5px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  vertical-align: -2px;
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+.income-range{
+  width: 100%;
+  flex-direction: column;
+}
+
+input[type="range"]{
+  /* height: 1px; */
+  border: 1px solid;
+}
+
+.input-range{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.input-range p{
+  align-content: center;
+  transform: translateY(-25%);
+  background-color: green;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#bio{
+  height: 5rem;
+}
+
+footer input{
+  border: none;
+  background-color: green;
+  color: white;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 5px;
+}

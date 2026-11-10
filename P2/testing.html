@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <form action="/" id="info">
+
+      <div class="input-name container-field">
+        <div class="input-field">
+          <label for="f-name">First name*</label>
+          <input type="text" id="f-name" placeholder="enter your first name">
+        </div>
+        <div class="input-field">
+          <label for="l-name">Last name*</label>
+          <input type="text" id="l-name" placeholder="enter your last name">
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="email">Email*</label>
+        <input type="email" id="email" placeholder="enter your email">
+      </div>
+
+      <div class="input-password container-field">
+        <div class="input-field">
+          <label for="password">Password*</label>
+          <input type="password" id="password" placeholder="enter your password">
+        </div>
+        <div class="input-field">
+          <label for="confirm-password">Confirm password*</label>
+          <input type="password" id="confirm-password" placeholder="enter your password again">
+        </div>
+      </div>
+
+      <div class="choice container-field">
+        <div class="input-field">
+          <label>Gender:</label>
+          <div class="gender-container">
+            <input type="radio" id="male-radio" name="gender">
+            <label for="male-radio">Male</label>
+            <input type="radio" id="female-radio" name="gender">
+            <label for="female-radio">Female</label>
+          </div>
+        </div>
+        <div class="input-field">
+          <label>Hobbies</label>
+          <div class="hobby-container">
+            <input type="checkbox" name="hobbied" id="music">
+            <label for="music">Music</label>
+            <input type="checkbox" name="hobbied" id="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="hobbied" id="travel">
+            <label for="travel">Travel</label>
+            <input type="checkbox" name="hobbied" id="movies">
+            <label for="movies">Movies</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-field">
+        <div class="input-field">
+          <label for="source-income">Source of income:</label>
+          <select name="source-income" id="source-income">
+            <option value="Employed">Employed</option>
+            <option value="Robbery">Robbery</option>
+            <option value="Steal">Steal</option>
+          </select>
+        </div>
+        <div class="input-field income-range">
+          <label for="income">Income</label>
+          <div class="input-range">
+            <input type="range" id="income" min="0" max="20000">
+            <p>20k</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-field">
+        <div class="input-field">
+          <label for="profile">Upload profile picture</label>
+          <input type="file" id="profile">
+        </div>
+        <div class="input-field">
+          <label for="age">Age</label>
+          <input type="number" id="age">
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio"></textarea>
+      </div>
+    </form>
+    <footer>
+      <input type="submit" form="info" value="Create">
+    </footer>
+  </div>
+</body>
+</html>

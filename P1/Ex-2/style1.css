@@ -1,0 +1,34 @@
+@media(min-width: 768px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: skyblue;
+        border: 2px solid black;
+    
+    }
+   
+
+   
+    .menu{
+        display: none;
+    }
+
+}
+
+@media(max-width: 768px){
+    .item{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        align-items: center;
+        justify-content: space-between;
+        background: skyblue;
+        border: 2px solid black;
+    }
+   
+}
